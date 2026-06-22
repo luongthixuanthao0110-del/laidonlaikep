@@ -1,8 +1,10 @@
 import streamlit as st
+from PIL import Image
 
 # Tiêu đề ứng dụng
 st.title("💰 Ứng dụng tính tiền gửi tiết kiệm_Lương Thị Xuân Thảo")
-
+image = Image.open("avatar.jpg")
+st.image(image, width=250)
 # Nhập dữ liệu
 C = st.number_input(
     "Nhập số tiền khách hàng gửi tiết kiệm (triệu đồng)",
